@@ -10,5 +10,7 @@ RegisterCommand('editor', function(source, args)
         ActivateRockstarEditor()
     elseif args[1] == CFG.COMMANDS["clip"] then 
         StartRecording(0)
-    end
-end, false)
+     elseif (args[1] == nil) then 
+            print('no')
+     end
+end)
